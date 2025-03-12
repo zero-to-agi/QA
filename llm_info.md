@@ -1,8 +1,7 @@
-Basic LLM Interview Questions
 To understand LLMs, it's important to start with the fundamental concepts. These foundational questions cover essential aspects such as architecture, key mechanisms, and typical challenges, providing a solid base for learning more advanced topics.
 
 What is the Transformer architecture, and how is it used in LLMs?
-The Transformer architecture is a deep learning model introduced by Vaswani et al. in 2017, designed to handle sequential data with improved efficiency and performance than previous models like recurrent neural networks (RNNs) and long short-term memory (LSTMs).
+* The Transformer architecture is a deep learning model introduced by Vaswani et al. in 2017, designed to handle sequential data with improved efficiency and performance than previous models like recurrent neural networks (RNNs) and long short-term memory (LSTMs).
 
 It relies on self-attention mechanisms to process input data in parallel, making it highly scalable and capable of capturing long-range dependencies.
 

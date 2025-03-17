@@ -2,18 +2,20 @@
 
 ### 1. Can you describe a time when you evaluated a product or technology based on specific customer requirements? What was your approach?
 
-"While developing our LLM fine-tuning system at TechAI, I worked with a financial services client who needed a domain-specific model for financial document analysis.
-The key requirements included handling proprietary financial terminology, maintaining regulatory compliance, and deploying entirely on their private infrastructure. I analyzed their available training data (approximately 50,000 annotated financial documents) and evaluated which base models would be most suitable for fine-tuning given their constraints.
+"While developing our LLM fine-tuning system at TechAI.
+I analyzed their available training data (approximately 50,000 annotated financial documents) and evaluated which base models would be most suitable for fine-tuning given their constraints.
 
 I built a comparative testing framework that allowed us to benchmark different foundation models (Llama 2, Mistral, and their existing BERT implementation) on domain-specific tasks. This revealed that while Llama 2 had better general reasoning capabilities, its 7B parameter version struggled with specialized financial terminology compared to a properly fine-tuned Mistral model.
 
-Based on these findings, I developed a custom PEFT (Parameter-Efficient Fine-Tuning) approach using LoRA adapters that allowed us to effectively fine-tune model on their financial corpus while minimizing computational requirements. I implemented automated evaluation pipelines that tested the model against compliance requirements and domain-specific metrics.
+Based on these findings, I developed a custom PEFT (Parameter-Efficient Fine-Tuning) approach using LoRA adapters that allowed us to effectively fine-tune model on their financial corpus while minimizing computational requirements. I implemented automated evaluation pipelines that tested the model against compliance requirements and domain-specific metrics.
 
-We developed sentence packing and 4D masking method to reduce the training time more than 60% percent.
-Since the client's data is much shorter than model's max token lenght, it was much effective than we thougth.
+I developed sentence packing and 4D masking method to reduce the training time more than 60% percent.
+Since the client's data is much shorter than model's max token length, it works more effectivly.
 
-The serving infrastructure I designed met their 100ms latency requirement while operating entirely within their secure environment. This technical approach directly addressed their needs while working within their infrastructure constraints."
+And also I found that only 2k data is needed to imporve the performance of embedding model.
+From the experiment that I performed, I found that under 2k data is enough to train domain knowelge while mitigate the general performance.
 
+This technical approach directly addressed their needs while working within their infrastructure constraints.
 
 ### 2. How do you typically gather and prioritize customer requirements when evaluating new solutions?
 

@@ -223,3 +223,69 @@
 
 10. **How do heterogeneous computing resources affect distributed training strategies?**
     - Require load balancing, adaptation to different device capabilities, specialized communication patterns, and potentially asymmetric data or model partitioning.
+
+
+=========================================================================
+
+AI & Machine Learning: Questions & Answers
+Domain Expertise - Artificial Intelligence
+What's the difference between narrow AI and general AI?
+Narrow AI does one specific task very well, like playing chess or recognizing images, but it can't learn other new tasks. General AI would be able to learn and apply knowledge across many different tasks, similar to how humans think. Right now, we only have narrow AI in real life.
+
+How do neural networks learn?
+Neural networks learn by adjusting connections ("weights") between their artificial neurons. They do this by comparing their predictions to the correct answers and then making small adjustments to reduce the errors. This process is called backpropagation and gradient descent.
+
+What is the "black box" problem in AI?
+The "black box" problem refers to the difficulty of understanding how some AI models, especially deep learning systems, make decisions. These models often produce results that humans find hard to explain clearly, making it tough to trust, debug, or control them.
+
+What are the key differences between symbolic AI and machine learning?
+Symbolic AI uses clear rules and logic programmed directly by people. Machine learning, on the other hand, doesn't have explicit rules; instead, it learns patterns from data examples.
+
+How has the AI alignment problem changed over time?
+The AI alignment problem involves making sure that AI models match human intentions and goals. Earlier, this was mostly a theoretical topic; now, it's become more practical, and new techniques (like Reward Learning from Human Feedback or RLHF) help address it.
+
+What is explainable AI (XAI)?
+Explainable AI means developing AI systems that clearly show why and how they made certain decisions. This helps humans understand, trust, and control AI more effectively.
+
+How does federated learning differ from traditional centralized learning?
+In traditional centralized learning, you bring all data to one place to train a model. Federated learning keeps data on individual devices (like phones), trains smaller models locally on each device, and then combines these models. This approach helps protect privacy and reduces data sharing.
+
+What are the main ways AI represents knowledge?
+AI systems represent knowledge in different ways, such as through rules, logic statements, semantic networks (connected concepts), frames (structured templates), and more recently using embeddings and knowledge graphs to link concepts together.
+
+What is the role of heuristics in AI problem-solving?
+Heuristics are simple guidelines ("rules of thumb") that help AI find solutions quickly, without needing to thoroughly check every possibility. While they sometimes don't find the perfect solution, they save time and effort by giving good, practical answers fast.
+
+How does multi-agent AI differ from single-agent systems?
+Single-agent AI involves just one agent making decisions by itself. In multi-agent AI, several independent agents interact, cooperate, or compete with each other. This often involves coordination, conflict handling, and principles from game theory.
+
+Generative AI
+How do diffusion models make images?
+Diffusion models start by adding random noise to images to destroy them, and then they slowly learn to reverse this process. Once trained, these models can take random noisy images and gradually remove that noise to create new clear images.
+
+What is the main idea behind transformer models used in generative AI?
+Transformer models use something called self-attention, which helps them understand which parts of the input data are most important. This lets them find links in words or ideas even over long distances, improving their ability to create meaningful output.
+
+What are common sampling methods used when AI generates text?
+Some popular methods include taking the most likely next word ("greedy decoding"), exploring multiple possible words ("beam search"), adjusting randomness ("temperature sampling"), and picking from just the best options ("nucleus" or "top-p" sampling).
+
+How do diffusion models compare with GANs?
+GANs (Generative Adversarial Networks) use two models competing with each other but can often be tricky to train. Diffusion models use a simpler, step-by-step noise-removal process. They tend to produce better quality images with more variety and are often easier to train.
+
+What improvements led from GPT-2 to GPT-3 models?
+GPT-3 is much larger, having many more "neurons" or parameters (175 billion versus GPT-2's 1.5 billion). GPT-3 also used more advanced training methods and higher-quality data, allowing it to handle tasks better and even gain new abilities.
+
+What is controllable generation in generative AI?
+Controllable generation means you can precisely influence certain characteristics of what the model creates. For example, you might control the tone, style, sentiment, or content of messages by specifying clearly what you want the model to produce.
+
+How do models like DALL-E create images from text?
+DALL-E and similar models first convert images into smaller "tokens" or pieces, kind of like words. They then use language models to generate these tokens based on a text description and finally turn these tokens back into images.
+
+What is the role of latent spaces in generative models?
+Latent spaces are simplified "maps" or representations of concepts where similar ideas naturally group together. Using latent spaces helps AI smoothly generate new outputs, explore different variations, or modify generated content easily.
+
+How do AI systems generate music, like MusicLM?
+These models usually turn audio (music) into sequences of tokens or visual representations (spectrograms). They learn patterns from these sequences, and afterward, they create new sequences based on what they've learned and then convert these sequences back into musical audio.
+
+What are common challenges when evaluating generative AI models?
+Evaluating generative AI can be difficult because the output is subjective. Often there's no clear measure of "correctness," making it tricky to know if one model is better than another. Challenges include judging creativity, diversity, consistency, and the quality of the content created.

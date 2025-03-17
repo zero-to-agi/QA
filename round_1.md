@@ -1,5 +1,7 @@
 ### main focus
-1. Consultative Skills 2. Cloud Foundations 3. Domain Expertise - AI  
+1. Consultative Skills
+2. Cloud Foundations
+3. Domain Expertise - AI  
 #### Consultative Skills
 Experience evaluating new products, services or technology using customer requirements
 Proof of concepts (POCs)

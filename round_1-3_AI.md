@@ -42,7 +42,9 @@
 
 3. **What are common sampling methods used in text generation?**
    - Greedy decoding (most probable token), beam search (maintaining multiple possibilities), temperature sampling (controlling randomness), and nucleus/top-p sampling (sampling from a dynamic subset).
-
+온도와 top-p 함께 사용: 많은 시스템에서 두 기법을 함께 사용합니다. 먼저 온도로 전체 분포를 조정한 다음 top-p로 샘플링합니다.
+ChatGPT와 같은 대화형 AI: 일반적으로 온도 값을 0.7-0.9, top-p 값을 0.9-0.95로 설정하여 자연스러우면서도 다양한 응답을 생성합니다.
+코드 생성: 온도를 낮게(0.2-0.4) 설정하고 top-p를 0.9 이상으로 설정하여 결정적이지만 일부 유연성을 가진 코드를 생성합니다.
 4. **How do diffusion models compare with GANs?**
    - GANs use two competing networks but can be unstable. Diffusion models gradually add and remove noise, typically producing higher quality and more diverse outputs.
 
@@ -56,10 +58,7 @@
    - They compress images into discrete tokens (like words), allowing them to be processed by language models, then reconstruct images from these tokens.
 
 8. **What is the role of latent spaces in generative models?**
-   - Latent spaces are compressed representations where similar concepts are nearby, enabling operations like interpolation between concepts and controlled generation by navigating this space.
-
-9. **How do music generation systems like MusicLM work?**
-   - They typically convert audio into sequential tokens or spectrograms, model these sequences using transformers, and generate new sequences that are converted back to audio.
+   - **Latent spaces are compressed representations** where similar concepts are nearby, enabling operations like interpolation between concepts and controlled generation by navigating this space.
 
 10. **What are common evaluation challenges for generative models?**
     - Lack of single objective metric, subjective quality assessment, balancing novelty vs. quality, and evaluating alignment with human intent or instruction.
@@ -73,16 +72,16 @@
    - Either through multilingual training data, specialized tokenization for different languages, or language-specific adaptations like embedding spaces.
 
 3. **What is prompt engineering?**
-   - The practice of designing effective input prompts that elicit desired behaviors from LLMs, often using techniques like few-shot examples, specific instructions, or structured formats.
+   - The practice of designing effective input prompts that elicit desired behaviors from LLMs, **often using techniques like few-shot examples, specific instructions, or structured formats.**
 
 4. **What are the key challenges in scaling language models?**
-   - Hardware limitations, increasing computational costs, diminishing returns on some tasks, and data exhaustion for high-quality training.
+   - **Hardware limitations, increasing computational costs**, diminishing returns on some tasks, and **data exhaustion for high-quality training.**
 
 5. **How do RLHF and constitutional AI improve alignment?**
-   - These improve alignment by incorporating human feedback and pre-defined values, helping models better understand human preferences and ethical boundaries.
+   - These improve alignment by incorporating human feedback and pre-defined values, **helping models better understand human preferences and ethical boundaries.**
 
 6. **What is retrieval-augmented generation (RAG)?**
-   - A technique where LLMs are connected to external knowledge sources that retrieve relevant information before generating responses, reducing hallucinations and improving factuality.
+   - A technique where LLMs are connected to **external knowledge sources that retrieve relevant information before generating responses**, reducing hallucinations and improving factuality.
 
 7. **How do instruction tuning and chain-of-thought prompting improve LLM reasoning?**
    - Instruction tuning makes models better at following specific directions, while chain-of-thought prompts models to show step-by-step reasoning, improving complex problem-solving.
@@ -94,7 +93,7 @@
    - They create vocabularies by iteratively merging common character pairs into single tokens, balancing vocabulary size with the ability to represent rare words.
 
 10. **What are the differences between decoder-only, encoder-only, and encoder-decoder architectures?**
-    - Decoder-only (like GPT) generates text sequentially, encoder-only (like BERT) understands text bidirectionally, and encoder-decoder (like T5) transforms input to output sequences.
+    - **Decoder-only (like GPT) generates text sequentially, encoder-only (like BERT) understands text bidirectionally, and encoder-decoder (like T5) transforms input to output sequence**s.
 
 ## Training & Serving Large ML Models
 
